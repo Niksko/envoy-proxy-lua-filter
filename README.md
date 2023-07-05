@@ -20,6 +20,7 @@ lua filter.
 
 ```
 docker-compose up --build
+
 # This curls the echo container directly
 curl -v localhost:8080
 *   Trying 127.0.0.1:8080...
@@ -59,6 +60,7 @@ curl -v localhost:8080
   }
 * Connection #0 to host localhost left intact
 }%      
+
 # This curls the container via Envoy
 # By default, you will see an additional foo: bar header, and some envoy headers added
 curl -v localhost:8000
